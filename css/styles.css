@@ -134,7 +134,7 @@ color: #404bbf;
 }
 
 .first-sect {
-background: #2e2f42;
+    background: #2e2f42;
     display: block;
     max-width: 1440px;
     margin: 0 auto;
@@ -526,6 +526,7 @@ overflow: hidden;
 .form-input {
     display: flex;
     margin-right: 24px;
+    background-color: transparent;
     border: 1px solid #fff;
     border-radius: 4px;
     width: 264px;
@@ -545,6 +546,24 @@ overflow: hidden;
     background: #4d5ae5;
 }
 
+label button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+}
+
 .form-btn-icon {
     fill: #ffffff;
+}
+
+input::placeholder {
+    padding-left: 8px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    color: #fff;
 }
