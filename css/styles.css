@@ -595,12 +595,25 @@ input::placeholder {
     position: absolute;
     top: 24px;
     right: 24px;
-    border: none;
     cursor: pointer;
     border-radius: 100%;
     background-color: #e7e9fc;
+    border: rgba(0, 0, 0, 0.1);
+    border-width: 1px;
     width: 24px;
     height: 24px;
+}
+
+.btn-close-icon {
+    
+}
+
+.btn-close:hover {
+    background-color:#404bbf;
+}
+
+.btn-close-icon:hover {
+    fill: #fff;
 }
 
 .modal-title {
@@ -669,6 +682,7 @@ input::placeholder {
     letter-spacing: 0.04em;
     color: rgba(46, 47, 66, 0.4);
     resize: none;
+    margin-bottom: 16px;
 }
 
 .btn-send {
@@ -679,7 +693,8 @@ input::placeholder {
     border: none;
     cursor: pointer;
     padding: 16px 32px;
-    margin: 0 auto;
+    margin: auto;
+    margin-top: 24px;
     min-width: 169px;
     height: 56px;
     background: #4d5ae5;
@@ -695,4 +710,41 @@ input::placeholder {
 
 .btn-send:hover {
     background-color: #404bbf;
+}
+
+.check-text {
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.check-link {
+    line-height: 1.33;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #4d5ae5;
+}
+
+.check-text span {
+    position: relative;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    margin-right: 8px;
+    fill: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-check:checked + .check-text span {
+    background-color: #404bbf;
+    border: none;
+    fill: #f4f4fd;
 }
