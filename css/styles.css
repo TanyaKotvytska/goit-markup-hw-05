@@ -604,10 +604,6 @@ input::placeholder {
     height: 24px;
 }
 
-.btn-close-icon {
-    
-}
-
 .btn-close:hover {
     background-color:#404bbf;
 }
